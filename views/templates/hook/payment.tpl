@@ -23,9 +23,9 @@
 *  International Registered Trademark & Property of PrestaShop SA
 *}
 
-<p class="payment_module_danamon">
-	<a class="bankdanamon" href="{$link->getModuleLink('bankdanamon', 'payment')|escape:'html'}" title="{l s='Pay by Bank Danamon' mod='bankdanamon'}">
-		<img src="{$this_path_bw}bankwire.jpg" alt="{l s='Pay by Bank Danamon' mod='bankdanamon'}" />
-		{l s='Pay by Bank Danamon' mod='bankdanamon'}
+<p class="payment_module">
+	<a href="{$link->getModuleLink('bankdanamon', 'payment')|escape:'html'}" title="{l s='Pay by Bank Danamon' d='Modules.BankDanamon.Shop'}">
+		<img src="{$this_path_bw}logo.png" alt="{l s='Pay by Bank Danamon' d='Modules.BankDanamon.Shop'}"/>
+		{l s='Pay by Bank Danamon' d='Modules.BankDanamon.Shop'}&nbsp;<span>{l s='(order processing will be longer)' d='Modules.BankDanamon.Shop'}</span>
 	</a>
 </p>

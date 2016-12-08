@@ -23,9 +23,14 @@
 *  International Registered Trademark & Property of PrestaShop SA
 *}
 
-<div class="alert alert-info">
-<img src="../modules/bankdanamon/logo.png" style="float:left; margin-right:15px;" height="60">
-<p><strong>{l s="This module allows you to accept secure payments by Bank Danamon." d='Modules.BankDanamon.Admin'}</strong></p>
-<p>{l s="If the client chooses to pay by Bank Danamon, the order's status will change to 'Awaiting Bank Danamon Payment.'" d='Modules.BankDanamon.Admin'}</p>
-<p>{l s="That said, you must manually confirm the order upon receiving the Bank Danamon." d='Modules.BankDanamon.Admin'}</p>
-</div>
+
+<dl>
+    <dt>{l s='Amount' mod='bankdanamon'}</dt>
+    <dd>{$total}</dd>
+    <dt>{l s='Name of account owner' mod='bankdanamon'}</dt>
+    <dd>{$bankdanamonOwner}</dd>
+    <dt>{l s='Please include these details' mod='bankdanamon'}</dt>
+    <dd>{$bankdanamonDetails}</dd>
+    <dt>{l s='Bank name' mod='bankdanamon'}</dt>
+    <dd>{$bankdanamonAddress nofilter}</dd>
+</dl>
